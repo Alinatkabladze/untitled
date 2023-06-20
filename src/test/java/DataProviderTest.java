@@ -3,11 +3,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class DataProviderTest {
-
-
         @DataProvider
         public Object[][] dpMethod(){
-            return new Object[][] {{2, 3 , 5}, {5, 8, 11}};
+            return new Object[][] {{2, 3 , 5}, {5, 8, 12}};
         }
 
         @Test(dataProvider = "dpMethod")
